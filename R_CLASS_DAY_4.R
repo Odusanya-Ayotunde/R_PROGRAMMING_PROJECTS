@@ -64,3 +64,36 @@ if (unit == 'f'){
   print("invalid input")
 }
 
+
+#to create permutation for multiple characters in a vector
+
+range_max <- as.integer(readline(prompt = "enter max range: "))
+arr_val <- c()
+for (i in 1:range_max){
+  arr_val <- c(arr_val, readline(prompt="enter array values: "))
+}
+print(arr_val)
+for (i in arr_val){
+  k <- 1
+  b <- nchar(i)
+  for (n  in 1:b){
+    k <- k * n
+  }
+  print (k)
+}
+
+
+range_max <- as.integer(readline(prompt = "enter max range: "))
+arr_val <- c()
+for (i in 1:range_max){
+  arr_val <- c(arr_val, readline(prompt="enter array values: "))
+}
+print(arr_val)
+for (i in arr_val){
+  k <- 1
+  b <- nchar(i)
+  for (n  in 1:b){
+    k <- k * n
+  }
+  print(paste("the permutation of", i, "is", k, sep=" "))
+}

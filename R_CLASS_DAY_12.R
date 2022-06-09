@@ -72,4 +72,4 @@ df %>%
 
 #coord_flip is to flip the graph, so if you remove the coord_flip from the code, the original graph would appear.
 #slice is to select from the whole dataframe. i.e. slice(ff,1:3) helped to select the first 3 highest data
-
+#ggplot can be found in the ggplot2 package. so you have to download ggplot2 by typing "install.packages("ggplot2") and run it. don't forget to type library("car")
